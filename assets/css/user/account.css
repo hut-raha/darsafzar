@@ -1,0 +1,97 @@
+#layout-items {
+    margin: 5.5rem 1rem 1rem 1rem;
+    direction: rtl;
+}
+
+#layout-items > div:first-child > h1 {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#layout-items > div:first-child > a:nth-child(10) {
+    margin-right: 0.5rem;
+}
+
+#layout-items > div:first-child > button {
+    float: left;
+}
+
+#layout-items > div:first-child > button {
+    margin-right: 1rem;
+}
+
+#layout-items > div {
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    float: left;
+}
+
+#layout-items > div:first-child {
+    border-radius: 1rem;
+    box-shadow: 0 0 6px 2px #aaa;
+    text-align: right;
+    padding: 1rem;
+    width: 98%;
+    margin: 1rem 1rem 0 1rem;
+}
+
+#layout-items > div:first-child > img {
+    height: 1.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#layout-items > div:first-child > img:first-child {
+    height: 5rem;
+    vertical-align: middle;
+}
+
+#layout-items > div:last-child {
+    width: 47.9%;
+}
+
+#layout-items > div > div {
+    border-radius: 1rem;
+    box-shadow: 0 0 6px 2px #aaa;
+    text-align: right;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#layout-items > div > div {
+    
+}
+
+#layout-items > div:nth-child(2) > div:first-child > h3 {
+    margin: 0;
+}
+
+#layout-items > div:nth-child(2) > div:first-child > p:last-child {
+    margin: 0;
+}
+
+#layout-items > div:nth-child(2) {
+    width: 47.9%;
+    direction: rtl;
+}
+
+.file-box span {
+    border-bottom: 0.1rem solid #000;
+    margin: 0 1rem;
+}
+
+.file-box a {
+    border-bottom: 0.1rem solid #000;
+    margin: 0 2rem;
+}
+
+.file-box button{
+    margin: 0 1rem 1rem 0;
+}
+
+#search-input {
+    border: 0.1rem solid #aaa;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    width: 15rem;
+}

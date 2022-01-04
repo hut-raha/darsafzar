@@ -1,0 +1,267 @@
+#custumize-bar {
+    box-shadow: 0 0 6px 2px #aaa;
+    height: 4rem;
+    margin: 5.5rem 1rem 1rem 1rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+#custumize-bar > span {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    background-color: #777;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#custumize-bar > span:hover {
+    background-color: #666;
+}
+
+#desk-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#desk-items > div {
+    width: 50%;
+    text-align: center;
+    margin: 1rem;
+}
+
+#desk-items > div:nth-child(1) {
+    width: 23%;
+}
+
+#desk-items > div:nth-child(1) > div {
+    border-radius: 1rem;
+    box-shadow: 0 0 6px 2px #aaa;
+    margin: 0 0 1rem 0;
+    text-align: right;
+    padding: 1rem;
+}
+
+#calendar > p:nth-child(1) {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#calendar > div {
+    text-align: center;
+}
+
+#calendar ul {
+    list-style-type: none;
+    padding: 0;
+    direction: rtl;
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    margin: 0;
+    border-bottom: 0.1rem solid #000;
+}
+
+#calendar ul:nth-child(2) {
+    border: none;
+}
+
+#calendar ul:nth-child(2) {
+    color: #fff;
+    background-color: #0386d1;
+}
+
+#calendar ul:nth-child(3) li {
+    margin: 0.9rem;
+}
+
+#calendar ul:nth-child(4) li {
+    margin: 0.9rem;
+}
+
+#calendar ul:nth-child(5) li {
+    margin: 0.77rem;
+}
+
+#calendar li {
+}
+
+#calendar li {
+    display: inline;
+    margin: 0.7rem;
+    font-size: 1rem;
+}
+
+#calendar ul:nth-child(2) li {
+    margin: 0.75rem;
+}
+
+#activites > p:nth-child(1) {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#activites div {
+    margin: 2rem 0;
+}
+
+#activites > div:last-child {
+    text-align: center;
+    color: #666;
+}
+
+#activites > div:last-child > img {
+    height: 5rem;
+}
+
+#activites > div:nth-child(2) > img {
+    border: 0.1rem solid #444;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    display: inline-block;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#activites > div > img:nth-child(2) {
+    float: left;
+}
+
+#activites > div > img:nth-child(3) {
+    float: right;
+}
+
+#notifications > p:nth-child(1) {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#notifications {
+
+}
+
+#desk-items > div:nth-child(2) {
+    width: 72.9%;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px 2px #aaa;
+}
+
+#desk-items > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    border: none;
+    text-align: right;
+    font-size: 1.2rem;
+    width: unset;
+    padding: 0;
+    color: #000;
+}
+
+#desk-items > div:nth-child(2) > div:nth-child(1) > div {
+    border: 0.1rem solid #444;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    color: #555;
+}
+
+#desk-items > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    float: right;
+    cursor: pointer;
+}
+
+#desk-items > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+    float: left;
+    cursor: pointer;
+}
+
+#desk-items > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) {
+    float: left;
+    cursor: pointer;
+}
+
+#desk-items > div:nth-child(2) > div:nth-child(1) img {
+    height: 1.2rem;
+    vertical-align: middle;
+}
+
+#lessons {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#lessons > div {
+    text-align: right;
+    width: 23%;
+    box-shadow: 0 0 6px 2px #aaa;
+    border-radius: 1rem;
+    margin: 1%;
+}
+
+#lessons > div > div:nth-child(1) {
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+}
+
+#lessons > div > div:nth-child(2) > img:nth-child(1) {
+    height: 1rem;
+    float: left;
+    cursor: pointer;
+}
+
+#lessons > div > div:nth-child(2) > * {
+    float: right;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#lessons > div > div:nth-child(2) > span {
+    width: 100%;
+}
+
+#lessons > div > div:nth-child(2) > span:nth-child(2) {
+    width: auto;
+}
+
+#lessons > div > div:nth-child(3) {
+    float: right;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.color-red {
+    background-color: #7c0000;
+}
+
+.color-orange {
+    background-color: #7c2700;
+}
+
+.color-yellow {
+    background-color: #7c7000;
+}
+
+.color-green {
+    background-color: #007c11;
+}
+
+.color-blue {
+    background-color: #00747c;
+}
+
+.color-dark-blue {
+    background-color: #00367c;
+}
+
+.color-purple {
+    background-color: #59007c;
+}
