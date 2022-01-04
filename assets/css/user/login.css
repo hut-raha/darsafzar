@@ -1,0 +1,36 @@
+#login {
+    background-image: url("/assets/media/image/winter.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#login-container {
+    width: 45%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#login-section {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    box-shadow: 0 0 12px 2px #aaa;
+    border-radius: 1rem;
+    background-color: #fff;
+    position: relative;
+    top: 20%;
+    transform: translateY(-25%);
+}
+
+#notification-section {
+    text-align: right;
+    margin: 0 auto;
+    font-size: 1rem;
+    box-shadow: 0 0 12px 2px #aaa;
+    border-radius: 1rem;
+    background-color: #fff;
+    position: relative;
+    top: 20%;
+    transform: translateY(-25%);
+}
