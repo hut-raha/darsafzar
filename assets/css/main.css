@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-#nav-bar > div:last-child img:first-child {
+#nav-bar > div:last-child > div:first-child img:first-child {
     height: 2rem;
 }
 
@@ -183,4 +183,85 @@ a {
 
 #bar-menu div:hover {
     background-color: #93c800;
+}
+
+
+#msg-bar {
+    width: 20%;
+    background-color: #fff;
+    position: absolute;
+    left: -20%;
+    top: 0;
+    height: 150%;
+    z-index: 1;
+    transition: all 500ms;
+    direction: rtl;
+    z-index: 1;
+}
+
+#msg-bar > div {
+    text-align: center;
+}
+
+#msg-bar > div:first-child {
+    margin-top: 5.5rem;
+}
+
+#msg-bar > div:nth-child(2) {
+    float: left;
+    margin: 1rem 2rem;
+}
+
+#msg-bar > div:nth-child(3) {
+    clear: left;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+#msg-bar > div:nth-child(3) > div > span {
+    display: inline-block;
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 0 6px 2px #888;
+}
+
+#msg-bar > div:nth-child(3) > div:first-child > div:last-child {
+    background-color: #6b899f;
+}
+
+#msg-bar > div:nth-child(3) > div > div:last-child {
+    box-shadow: 0 0 6px 2px #888;
+}
+
+#msg-bar > div:nth-child(3) > div > div:last-child > img {
+    margin-left: 1rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#msg-bar > div:nth-child(3) > div > div:last-child > p {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+#msg-bar img {
+    height: 1rem;
+    vertical-align: middle;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+#msg-bar > div:nth-child(2) > span {
+    cursor: pointer;
+}
+
+.search-input {
+    border: 0.1rem solid #aaa;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    width: 15rem;
 }

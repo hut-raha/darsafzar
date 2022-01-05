@@ -65,9 +65,23 @@
         </div>
         <div id="activites">
             <p>گاه‌شمار فعالیت ها</p>
-            <div>
-                <img src="/assets/svg/main/clock.svg" alt="">
-                <img src="/assets/svg/main/sort-amount-down-alt.svg" alt="">
+            <div id="clk-alt">
+                <img src="/assets/svg/main/clock.svg" alt="" onclick="activitiesMenu(3)">
+                <img src="/assets/svg/main/sort-amount-down-alt.svg" alt="" onclick="activitiesMenu(0)">
+                <div style="display: none">
+                    <div>مرتب‌سازی بر اساس تاریخ‌ها</div>
+                    <div>مرتب‌سازی بر اساس درس‌ها</div>
+                </div>
+                <div style="display: none">
+                    <div>همه</div>
+                    <div>تاخیر دار</div>
+                    <br>
+                    <div style="color: #777; cursor: default">مهلت</div>
+                    <div>۷ روز آینده</div>
+                    <div>۳۰ روز آینده</div>
+                    <div>۳ ماه آینده</div>
+                    <div>۶ ماه آینده</div>
+                </div>
             </div>
             <div>
                 <img src="/assets/svg/main/clipboard-list.svg" alt="">
@@ -84,15 +98,32 @@
     <div>
         <div>
             <div>نمای کلی درس</div>
-            <div>
+            <div onclick="openList(7)">
                 <span>همه (به جز موارد حذف شده)</span>
                 <img src="/assets/svg/main/filter.svg" alt="">
             </div>
-            <div>
+            <div id="card" onclick="openList(0)">
                 <span>کارت</span>
                 <img src="/assets/svg/main/th.svg" alt="">
+                <div style="display: none">
+                    <div>کارت</div>
+                    <div>لیست</div>
+                    <div>خلاصه</div>
+                </div>
+                <div style="display: none">
+                    <div>نام درس</div>
+                    <div>آخرین زمان دسترسی</div>
+                </div>
+                <div style="display: none">
+                    <div>همه (به جز موارد حذف شده)</div>
+                    <div>در جریان</div>
+                    <div>آینده</div>
+                    <div>گذشته</div>
+                    <div>ستاره‌دار</div>
+                    <div>برای نمایش حذف شد</div>
+                </div>
             </div>
-            <div>
+            <div onclick="openList(4)">
                 <span>نام درس</span>
                 <img src="/assets/svg/main/sort-amount-down-alt.svg" alt="">
             </div>
@@ -100,7 +131,9 @@
     
         <div id="lessons">
             <div>
-                <div class="color-red"></div>
+                <div class="color-red">
+                    <img src="/assets/media/image/os_lab.jpg" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
@@ -110,7 +143,9 @@
                 <div>آزمایشگاه سیستم های عامل</div>
             </div>
             <div>
-                <div class="color-orange"></div>
+                <div class="color-orange">
+                    <img src="" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
@@ -120,7 +155,9 @@
                 <div>اصول طراحی کامپایلر</div>
             </div>
             <div>
-                <div onclick="lessonPage()" class="color-yellow"></div>
+                <div onclick="lessonPage()" class="color-yellow">
+                    <img src="/assets/media/image/Cover.jpg" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
@@ -130,7 +167,9 @@
                 <div onclick="lessonPage()">تحلیل و طراحی سیستم‌ها</div>
             </div>
             <div>
-                <div class="color-green"></div>
+                <div class="color-green">
+                    <img src="" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه دروس عمومی</span>
@@ -140,7 +179,9 @@
                 <div>تفسیر موضوعی قرآن</div>
             </div>
             <div>
-                <div class="color-blue"></div>
+                <div class="color-blue">
+                    <img src="" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه دروس عمومی</span>
@@ -150,7 +191,9 @@
                 <div>دانش خانواده و جمعیت</div>
             </div>
             <div>
-                <div class="color-dark-blue"></div>
+                <div class="color-dark-blue">
+                    <img src="" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
@@ -160,7 +203,9 @@
                 <div>ریزپردازنده و زبان اسمبلی</div>
             </div>
             <div>
-                <div class="color-purple"></div>
+                <div class="color-purple">
+                    <img src="" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
@@ -170,7 +215,9 @@
                 <div>شبکه های کامپیوتری</div>
             </div>
             <div>
-                <div class="color-red"></div>
+                <div class="color-red">
+                    <img src="" alt="">
+                </div>
                 <div>
                     <img src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>

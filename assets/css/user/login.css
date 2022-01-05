@@ -1,8 +1,12 @@
 #login {
+    height: 100%;
+}
+
+body {
     background-image: url("/assets/media/image/winter.jpg");
     background-size: auto;
     background-attachment: fixed;
-    height: 100%;
+
 }
 
 #login-container {
