@@ -8,6 +8,39 @@
     <link rel="stylesheet" href="/assets/css/<?php echo IndexTool::getInstance()->getUpperCategory() ?>/<?php echo IndexTool::getInstance()->getInnerCategory() ?>.css">
 </head>
 <body>
+    <div id="msg-bar">
+        <div>
+            <input class="search-input" type="text" name="">
+            <img src="/assets/svg/main/cog.svg" alt="">
+        </div>
+        <div>
+            <img src="/assets/svg/main/user-circle-black.svg" alt="">
+            <span>مخاطبین</span>
+        </div>
+        <div>
+            <div>
+                <span onclick="msgBarOpenDiv(0)">ستاره‌دار (1)</span>
+                <div id="msg-bar-menu0" style="display: none">
+                    <img src="/assets/svg/main/user-circle.svg" alt="">
+                    <span>نام دانشجو</span>
+                </div>
+            </div>
+            <div>
+                <span onclick="msgBarOpenDiv(1)">کروه (0)</span>
+                <div id="msg-bar-menu1" style="display: none">
+                    <img src="/assets/svg/main/user-circle.svg" alt="">
+                    <p>هیچ مکالمه گروهی ندارید</p>
+                </div>
+            </div>
+            <div>
+                <span onclick="msgBarOpenDiv(2)">خصوصی (0)</span>
+                <div id="msg-bar-menu2" style="display: none">
+                    <img src="/assets/svg/main/user-circle.svg" alt="">
+                    <p>هیچ مکالمه خصوصی ندارید</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="bar-menu">
         <div>
             <span>میز کار</span>
@@ -56,7 +89,7 @@
     <div id="nav-bar">
         <img src="/assets/svg/main/bars.svg" alt="" onclick="barMenu()">
         <img src="/assets/media/image/hut-logo.png" alt="">
-        <span>سامانه درس افزار دانشگاه صنعتی همدان</span>
+        <a style="color: #fff" href="/user/desk">سامانه درس افزار دانشگاه صنعتی همدان</a>
         <div>
             <div>
                 <img src="/assets/svg/main/user-circle.svg" alt="" onclick="userMenu()">
@@ -88,12 +121,40 @@
                 </div>
             </div>
             <span>نام دانشجو</span>
-            <img src="/assets/svg/main/envelope.svg" alt="">
-            <img src="/assets/svg/main/bell.svg" alt="">
+            <img src="/assets/svg/main/envelope.svg" alt="" onclick="msgBar()">
+            <div id="bell">
+                <img src="/assets/svg/main/bell.svg" alt="" onclick="openBellList()">
+                <div style="display: none">
+                    <img src="/assets/svg/main/cog-purple.svg" alt="">
+                    <img src="/assets/svg/main/check.svg" alt="">
+                    <hr style="clear: left; margin: 0; color: #eee">
+                    <div class="bell-items">
+                        <img src="" alt="">
+                        <span>آزمایشگاه سیستم های عامل(۱۳۱۰۰۵۷_۰۱): در پاسخ به: روز و شرایط برگزاری آزمون درس آزمایشگاه سیستم های عامل</span>
+                        <br><br>
+                        <span>2 ساعت 13 دقیقه قبل</span>
+                        <a href="/user/notification/1">مشاهده متن کامل اطلاعیه</a>
+                    </div>
+                    <div class="bell-items">
+                        <img src="" alt="">
+                        <span>اصول طراحی کامپایلر(۱۳۱۰۰۳۹_۰۱): لینک ویدئوهای ضبط شده جلسه سی و دوم (آفلاین)</span>
+                        <br><br>
+                        <span>14 ساعت 7 دقیقه قبل</span>
+                        <a href="/user/notification/2">مشاهده متن کامل اطلاعیه</a>
+                    </div>
+                    <div class="bell-items">
+                        <img src="" alt="">
+                        <span>تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱): آزمون پروژه عملی</span>
+                        <br><br>
+                        <span>15 ساعت 26 دقیقه قبل</span>
+                        <a href="/user/notification/3">مشاهده متن کامل اطلاعیه</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <?php } ?>
-    <div id="content" style="right: 0">
+    <div id="content" style="left: 0; right: 0">
         <?php echo $innerPage ?>
     </div>
     <script src="/assets/js/main.js"></script>

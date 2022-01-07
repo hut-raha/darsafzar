@@ -1,5 +1,4 @@
 function userMenu() {
-    console.log(document.getElementById("user-menu").getAttribute("data-lock") == "false");
     if (document.getElementById("user-menu").getAttribute("data-lock") == "false") {
         console.log("V");
         if (document.getElementById("user-menu").style.opacity == 0) {
@@ -45,12 +44,41 @@ function userMenuPage(num) {
 }
 
 function barMenu() {
-    console.log(document.getElementById("content").style.right);
     if (document.getElementById("content").style.right == "0px") {
         document.getElementById("bar-menu").style.left = "80%";
         document.getElementById("content").style.right = "20%";
+        document.getElementById("content").style.left = "-20%";
     } else {
         document.getElementById("bar-menu").style.left = "100%";
         document.getElementById("content").style.right = "0px";
+        document.getElementById("content").style.left = "0px";
+    }
+}
+
+function msgBar() {
+    if (document.getElementById("content").style.left == "0px") {
+        document.getElementById("msg-bar").style.left = "0.5%";
+        document.getElementById("content").style.left = "20%";
+        document.getElementById("content").style.right = "-20%";
+    } else {
+        document.getElementById("msg-bar").style.left = "-20%";
+        document.getElementById("content").style.left = "0px";
+        document.getElementById("content").style.right = "0px";
+    }
+}
+
+function msgBarOpenDiv(num) {
+    if (document.getElementById("msg-bar-menu" + num).style.display == "none") {
+        document.getElementById("msg-bar-menu" + num).style.display = "block";
+    } else {
+        document.getElementById("msg-bar-menu" + num).style.display = "none";
+    }
+}
+
+function openBellList(num) {
+    if (document.getElementById("bell").getElementsByTagName("div")[0].style.display == "none") {
+        document.getElementById("bell").getElementsByTagName("div")[0].style.display = "block";
+    } else {
+        document.getElementById("bell").getElementsByTagName("div")[0].style.display = "none";
     }
 }
