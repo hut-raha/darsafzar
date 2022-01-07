@@ -37,10 +37,10 @@ class IndexTool
                 }
                 else
                 {
-                    if ($requestUri[0] == "main" || $requestUri[0] == "")
+                    if ($requestUri[0] == "user" || $requestUri[0] == "")
                     {
-                        $this->uppderCategory = "main";
-                        $this->innerCategory = "home";
+                        $this->uppderCategory = "user";
+                        $this->innerCategory = "login";
                         $this->route = $this->uppderCategory . '/' . $this->innerCategory;
                     }
                     else
@@ -67,8 +67,8 @@ class IndexTool
         }
         else
         {
-            $this->uppderCategory = "main";
-            $this->innerCategory = "home";
+            $this->uppderCategory = "user";
+            $this->innerCategory = "login";
             $this->route = $this->uppderCategory . '/' . $this->innerCategory;
         }
     }

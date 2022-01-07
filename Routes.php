@@ -82,6 +82,26 @@ Route::check("user/exercise", function()
     Controller::view("user/exercise");
 });
 
+Route::check("exercise/show", function()
+{
+    Controller::view("exercise/show");
+});
+
+Route::check("exam/show", function()
+{
+    Controller::view("exam/show");
+});
+
+Route::check("exam/review", function()
+{
+    Controller::view("exam/review");
+});
+
+Route::check("class/online", function()
+{
+    Controller::view("class/online");
+});
+
 Route::check("user/exit", function()
 {
     Controller::view("user/exit");

@@ -89,7 +89,7 @@
     <div id="nav-bar">
         <img src="/assets/svg/main/bars.svg" alt="" onclick="barMenu()">
         <img src="/assets/media/image/hut-logo.png" alt="">
-        <span>سامانه درس افزار دانشگاه صنعتی همدان</span>
+        <a style="color: #fff" href="/user/desk">سامانه درس افزار دانشگاه صنعتی همدان</a>
         <div>
             <div>
                 <img src="/assets/svg/main/user-circle.svg" alt="" onclick="userMenu()">

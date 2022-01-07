@@ -131,13 +131,13 @@
     <div>
         <div>
             <h2>تالار اعلانات</h2>
-            <a href="">تالار اعلانات</a>
+            <a href="/forum/sad/12">تالار اعلانات</a>
             <img src="/assets/media/image/icon3.svg" alt="">
         </div>
         <div>
             <h2>کلاس های آنلاین</h2>
-            <a href="">تحلیل و طراحی سیستمهای نرم افزاری</a>
-                <img style="height: 24px" src="/assets/media/image/adobe.gif" alt="">
+            <a href="/class/online">تحلیل و طراحی سیستمهای نرم افزاری</a>
+            <img style="height: 24px" src="/assets/media/image/adobe.gif" alt="">
         </div>
         <div>
             <h2>فایل های بارگذاری شده</h2>
@@ -322,7 +322,7 @@
         <div>
             <h2>تمرین ها</h2>
             <p>
-                <a href="">گام 0 پروژه عملی</a>
+                <a href="/exercise/show/1">گام 0 پروژه عملی</a>
                 <img src="/assets/media/image/icon.svg" alt="">
             </p>
             <p>
@@ -353,7 +353,7 @@
         <div>
             <h2>آزمون ها</h2>
             <p>
-                <a href="">آزمون فصل 1</a>
+                <a href="/exam/show">آزمون فصل 1</a>
                 <img src="/assets/media/image/icon2.svg" alt="">
             </p>
             <p>
