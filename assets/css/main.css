@@ -265,3 +265,74 @@ a {
     border-radius: 0.2rem;
     width: 15rem;
 }
+
+
+#bell {
+    position: relative;
+}
+
+#bell > div {
+    background-color: #fff;
+    width: 25rem;
+    position: absolute;
+    top: 2.6rem;
+    box-shadow: 0 0 6px 2px #aaa;
+    text-align: right;
+    color: #000;
+}
+
+#bell > div > img {
+    float: left;
+    margin: 0.5rem;
+}
+
+#bell > div > div {
+    clear: left;
+}
+
+#bell > div:nth-child(3) {
+    left: 0;
+    width: 7rem;
+}
+
+#bell > div:nth-child(4) {
+    left: 7.5rem;
+}
+
+#bell > div:nth-child(5) {
+    left: 55.3rem;
+}
+
+#bell > div > div {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#bell > div:nth-child(4) > div:nth-child(4):hover {
+    background-color: unset;
+}
+
+.bell-items {
+    direction: rtl;
+}
+
+.bell-items:hover {
+    background-color: #79b5e6;
+    color: #fff;
+}
+
+.bell-items > span:nth-child(5) {
+    color: #888;
+    font-size: 0.8rem;
+    padding-top: 3rem;
+}
+
+.bell-items > a:nth-child(6) {
+    float: left;
+}
+
+.select {
+    border: none;
+    box-shadow: 0 0 6px 2px #888;
+    padding: 1rem;
+}

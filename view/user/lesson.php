@@ -12,15 +12,15 @@
             <h3>فعالیت‌ها</h3>
             <p>
                 <img src="/assets/media/image/icon2.svg" alt="">
-                <a href="">آزمون‌ها</a>
+                <a href="/user/exams/sad">آزمون‌ها</a>
             </p>
             <p>
                 <img src="/assets/media/image/icon3.svg" alt="">
-                <a href="">تالارهای گفتگو</a>
+                <a href="/forum/home">تالارهای گفتگو</a>
             </p>
             <p>
                 <img src="/assets/media/image/icon.svg" alt="">
-                <a href="">تکالیف</a>
+                <a href="/user/exercise">تکالیف</a>
             </p>
             <p>
                 <img src="/assets/media/image/icon4.svg" alt="">
