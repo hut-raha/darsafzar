@@ -2,6 +2,11 @@
 
 require_once "system/Route.php";
 
+Route::check("index.php/", function()
+{
+    header("Location: /user/login");
+});
+
 Route::check("main/home", function()
 {
     Controller::view("main/Home");

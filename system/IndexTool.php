@@ -8,7 +8,7 @@ class IndexTool
     private $route;
     private $params;
 
-    public static function getInstance() : IndexTool
+    public static function getInstance()
     {
         if (self::$instance == null)
         {

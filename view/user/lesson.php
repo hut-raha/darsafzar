@@ -28,7 +28,7 @@
             </p>
             <p>
                 <img style="border-radius: 1rem; height: 24px" src="/assets/media/image/adobe.gif" alt="">
-                <a href="">Adobe Connect</a>
+                <a href="/class/online">Adobe Connect</a>
             </p>
         </div>
         <div>

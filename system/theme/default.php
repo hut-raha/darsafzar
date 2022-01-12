@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/<?php echo IndexTool::getInstance()->getUpperCategory() ?>/<?php echo IndexTool::getInstance()->getInnerCategory() ?>.css">
 </head>
-<body>
+<body style="background-color: #fff">
     <div id="msg-bar">
         <div>
             <input class="search-input" type="text" name="">
@@ -151,6 +151,8 @@
                     </div>
                 </div>
             </div>
+            <div>Dark mode :</div>
+            <div id="toggle-dark" style="background-color: rgb(255, 255, 255)" onclick="toggleDark(this)"></div>
         </div>
     </div>
     <?php } ?>

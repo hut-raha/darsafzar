@@ -82,3 +82,49 @@ function openBellList(num) {
         document.getElementById("bell").getElementsByTagName("div")[0].style.display = "none";
     }
 }
+
+function toggleDark(element) {
+    console.log(document.body.style.backgroundColor);
+    if (document.body.style.backgroundColor == "rgb(255, 255, 255)") {
+        document.cookie = "username=dark-mode; expires=Thu, 18 Dec 2050 12:00:00 UTC; path=/;"
+        element.style.backgroundColor = "rgb(20, 20, 20)";
+        document.body.style.backgroundColor = "rgb(20, 20, 20)";
+        document.body.style.color = "rgb(255, 255, 255)";
+        document.getElementById("msg-bar").style.backgroundColor = "rgb(20, 20, 20)";
+        document.getElementById("bar-menu").style.backgroundColor = "rgb(20, 20, 20)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.backgroundColor = "rgb(20, 20, 20)";
+        
+        document.getElementById("msg-bar").style.color = "rgb(255, 255, 255)";
+        document.getElementById("bar-menu").style.color = "rgb(255, 255, 255)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(255, 255, 255)";
+    } else if (document.body.style.backgroundColor == "rgb(20, 20, 20)") {
+        document.cookie = "username=dark-mode; expires=Thu, 18 Dec 1970 00:00:00 UTC; path=/;"
+        element.style.backgroundColor = "rgb(255, 255, 255)";
+        document.body.style.backgroundColor = "rgb(255, 255, 255)";
+        document.body.style.color = "rgb(20, 20, 20)";
+        document.getElementById("msg-bar").style.backgroundColor = "rgb(255, 255, 255)";
+        document.getElementById("bar-menu").style.backgroundColor = "rgb(255, 255, 255)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.backgroundColor = "rgb(255, 255, 255)";
+        
+        document.getElementById("msg-bar").style.color = "rgb(20, 20, 20)";
+        document.getElementById("bar-menu").style.color = "rgb(20, 20, 20)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(20, 20, 20)";
+
+    }
+}
+
+window.onload = function() {
+    console.log(document.cookie);
+    if (document.cookie != "") {
+        document.getElementById("toggle-dark").style.backgroundColor = "rgb(20, 20, 20)";
+        document.body.style.backgroundColor = "rgb(20, 20, 20)";
+        document.body.style.color = "rgb(255, 255, 255)";
+        document.getElementById("msg-bar").style.backgroundColor = "rgb(20, 20, 20)";
+        document.getElementById("bar-menu").style.backgroundColor = "rgb(20, 20, 20)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.backgroundColor = "rgb(20, 20, 20)";
+        
+        document.getElementById("msg-bar").style.color = "rgb(255, 255, 255)";
+        document.getElementById("bar-menu").style.color = "rgb(255, 255, 255)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(255, 255, 255)";
+    }
+}
