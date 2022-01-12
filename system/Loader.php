@@ -16,4 +16,5 @@ spl_autoload_register(function($fileName)
     }
 });
 
+require_once "system/database.php";
 require_once "Routes.php";
