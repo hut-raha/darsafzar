@@ -87,6 +87,19 @@ function toggleDark(element) {
     console.log(document.body.style.backgroundColor);
     if (document.body.style.backgroundColor == "rgb(255, 255, 255)") {
         document.cookie = "username=dark-mode; expires=Thu, 18 Dec 2050 12:00:00 UTC; path=/;"
+
+        document.getElementById("user-menu").style.backgroundColor = "rgb(20, 20, 20)";
+        document.getElementById("user-menu").style.color = "rgb(255, 255, 255)";
+        if (document.getElementById("lessons-title") != null) {
+            document.getElementById("lessons-title").style.color = "rgb(255, 255, 255)";
+        }
+        document.getElementById("user-menu").getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = "/assets/svg/main/tachometer-alt-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[1].getElementsByTagName("img")[0].src = "/assets/svg/main/user-alt-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[2].getElementsByTagName("img")[0].src = "/assets/svg/main/table-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[3].getElementsByTagName("img")[0].src = "/assets/svg/main/envelope.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[4].getElementsByTagName("img")[0].src = "/assets/svg/main/wrench-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[5].getElementsByTagName("img")[0].src = "/assets/svg/main/sign-out-alt-white.svg";
+
         element.style.backgroundColor = "rgb(20, 20, 20)";
         document.body.style.backgroundColor = "rgb(20, 20, 20)";
         document.body.style.color = "rgb(255, 255, 255)";
@@ -99,6 +112,19 @@ function toggleDark(element) {
         document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(255, 255, 255)";
     } else if (document.body.style.backgroundColor == "rgb(20, 20, 20)") {
         document.cookie = "username=dark-mode; expires=Thu, 18 Dec 1970 00:00:00 UTC; path=/;"
+
+        document.getElementById("user-menu").style.backgroundColor = "rgb(255, 255, 255)";
+        document.getElementById("user-menu").style.color = "rgb(0, 0, 0)";
+        if (document.getElementById("lessons-title") != null) {
+            document.getElementById("lessons-title").style.color = "rgb(0, 0, 0)";
+        }
+        document.getElementById("user-menu").getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = "/assets/svg/main/tachometer-alt.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[1].getElementsByTagName("img")[0].src = "/assets/svg/main/user-alt.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[2].getElementsByTagName("img")[0].src = "/assets/svg/main/table.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[3].getElementsByTagName("img")[0].src = "/assets/svg/main/envelope-black.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[4].getElementsByTagName("img")[0].src = "/assets/svg/main/wrench.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[5].getElementsByTagName("img")[0].src = "/assets/svg/main/sign-out-alt.svg";
+
         element.style.backgroundColor = "rgb(255, 255, 255)";
         document.body.style.backgroundColor = "rgb(255, 255, 255)";
         document.body.style.color = "rgb(20, 20, 20)";
@@ -117,6 +143,19 @@ window.onload = function() {
     console.log(document.cookie);
     if (document.cookie != "") {
         document.getElementById("toggle-dark").style.backgroundColor = "rgb(20, 20, 20)";
+
+        document.getElementById("user-menu").style.backgroundColor = "rgb(20, 20, 20)";
+        document.getElementById("user-menu").style.color = "rgb(255, 255, 255)";
+        if (document.getElementById("lessons-title") != null) {
+            document.getElementById("lessons-title").style.color = "rgb(255, 255, 255)";
+        }
+        document.getElementById("user-menu").getElementsByTagName("div")[0].getElementsByTagName("img")[0].src = "/assets/svg/main/tachometer-alt-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[1].getElementsByTagName("img")[0].src = "/assets/svg/main/user-alt-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[2].getElementsByTagName("img")[0].src = "/assets/svg/main/table-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[3].getElementsByTagName("img")[0].src = "/assets/svg/main/envelope.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[4].getElementsByTagName("img")[0].src = "/assets/svg/main/wrench-white.svg";
+        document.getElementById("user-menu").getElementsByTagName("div")[5].getElementsByTagName("img")[0].src = "/assets/svg/main/sign-out-alt-white.svg";
+
         document.body.style.backgroundColor = "rgb(20, 20, 20)";
         document.body.style.color = "rgb(255, 255, 255)";
         document.getElementById("msg-bar").style.backgroundColor = "rgb(20, 20, 20)";

@@ -97,7 +97,7 @@
 
     <div>
         <div>
-            <div>نمای کلی درس</div>
+            <div id="lessons-title">نمای کلی درس</div>
             <div onclick="openList(7)">
                 <span>همه (به جز موارد حذف شده)</span>
                 <img src="/assets/svg/main/filter.svg" alt="">
