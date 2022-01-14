@@ -2,14 +2,14 @@
     <div>
         <h1>تحلیل و طراحی سیستم‌ها</h1>
         <br><br>
-        <a href="">میز کار</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/desk">میز کار</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span>درس های من</span>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
-        <a href="">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
-        <a href="">تالار اعلانات</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/lesson/sad">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/forum/sad">تالار اعلانات</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href="">آزمون پروژه عملی</a>
         <input style="float:left" class="search-input" type="text" name="" placeholder="جستجو در تالارهای گفتگو">
     </div>
@@ -18,7 +18,7 @@
             <h2>تالار اعلانات</h2>
             <h2>آزمون پروژه عملی</h2>
             <a style="float: left; margin-right: 0.5rem" href="">تنظیمات</a>
-            <img style="float: left; height: 1rem; vertical-align: middle; cursor: pointer" src="/assets/svg/main/cog.svg" alt=""><br>
+            <img class="gears" style="float: left; height: 1rem; vertical-align: middle; cursor: pointer" src="/assets/svg/main/cog.svg" alt=""><br>
             <a href="">► اطلاعیه برگزاری آزمون پایانترم</a><br><br>
             <select class="select" name="" id="">
                 <option value="">نمایش مطالب به صورت مسطح (از قدیمی به جدید)</option>

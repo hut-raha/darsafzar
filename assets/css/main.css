@@ -338,9 +338,19 @@ a {
 }
 
 #toggle-dark {
+    height: 1.5rem;
+    width: 3.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#toggle-dark > div {
     height: 1rem;
     width: 1rem;
     border-radius: 1rem;
-    cursor: pointer;
-    transition: all 500ms;
+    margin: 0.3rem;
+    background-color: #003459;
+    transition: all 200ms;
 }

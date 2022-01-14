@@ -1,14 +1,14 @@
 <div id="layout-items">
     <div>
-        <img src="/assets/svg/main/user-circle-black.svg" alt="">
+        <img class="users" src="/assets/svg/main/user-circle-black.svg" alt="">
         <h1>نام دانشجو</h1>
-        <img style="margin-right: 1rem" src="/assets/svg/main/envelope-black.svg" alt="">
+        <img class="envelopes" style="margin-right: 1rem" src="/assets/svg/main/envelope-black.svg" alt="">
         <a href="">پیام</a>
-        <img style="float: left" src="/assets/svg/main/cog.svg" alt=""><br><br>
+        <img class="gears" style="float: left" src="/assets/svg/main/cog.svg" alt=""><br><br>
         <button class="btn-gray">شخصی‌سازی این صفحه</button>
         <button class="btn-gray">بازنشانی صفحه به طراحی پیش‌فرض</button>
-        <a href="">میز کار</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/desk">میز کار</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href="">مشخصات فردی</a>
     </div>
     <div>

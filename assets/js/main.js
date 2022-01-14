@@ -87,6 +87,75 @@ function toggleDark(element) {
     console.log(document.body.style.backgroundColor);
     if (document.body.style.backgroundColor == "rgb(255, 255, 255)") {
         document.cookie = "username=dark-mode; expires=Thu, 18 Dec 2050 12:00:00 UTC; path=/;"
+        document.getElementById("toggle-dark").firstElementChild.style.marginLeft = "2.1rem";
+        document.getElementById("toggle-dark").style.backgroundColor = "rgb(20, 20, 20)";
+        if (document.getElementsByClassName("dark-desk")[0] != undefined) {
+            document.getElementsByClassName("dark-desk")[0].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[0].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[1].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[1].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[2].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[2].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[3].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[3].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[4].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[4].style.color = "rgb(255, 255, 255)";
+        }
+
+        if (document.getElementsByClassName("envelopes")[0] != undefined) {
+            document.getElementsByClassName("envelopes")[0].src = "/assets/svg/main/envelope.svg"
+        }
+
+        if (document.getElementsByClassName("gears")[0] != undefined) {
+            document.getElementsByClassName("gears")[0].src = "/assets/svg/main/cog-white.svg"
+            for (element of document.getElementsByClassName("gears")) {
+                element.src = "/assets/svg/main/cog-white.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("users")[0] != undefined) {
+            document.getElementsByClassName("users")[0].src = "/assets/svg/main/user-circle.svg";
+            for (element of document.getElementsByClassName("users")) {
+                element.src = "/assets/svg/main/user-circle.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("arrows")[0] != undefined) {
+            for (element of document.getElementsByClassName("arrows")) {
+                element.src = "/assets/svg/main/long-arrow-alt-left-white.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("ellipsises")[0] != undefined) {
+            for (element of document.getElementsByClassName("ellipsises")) {
+                element.src = "/assets/svg/main/ellipsis-v-white.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("stars")[0] != undefined) {
+            for (element of document.getElementsByClassName("stars")) {
+                element.src = "/assets/svg/main/star-white.svg";
+            }
+        }
+
+        if (document.getElementById("calendar") != null) {
+            let i = 0;
+            for (element of document.getElementById("calendar").lastElementChild.getElementsByTagName("ul")) {
+                if (i == 0) {
+                    i++;
+                    continue;
+                }
+                element.style.backgroundColor = "rgb(20, 20, 20)";
+                element.style.color = "rgb(255, 255, 255)";
+                i++;
+            }
+        }
+
+        if (document.getElementsByClassName("ellipsises-h")[0] != undefined) {
+            for (element of document.getElementsByClassName("ellipsises-h")) {
+                element.src = "/assets/svg/main/ellipsis-h-white.svg";
+            }
+        }
 
         document.getElementById("user-menu").style.backgroundColor = "rgb(20, 20, 20)";
         document.getElementById("user-menu").style.color = "rgb(255, 255, 255)";
@@ -124,8 +193,80 @@ function toggleDark(element) {
         document.getElementById("msg-bar").style.color = "rgb(255, 255, 255)";
         document.getElementById("bar-menu").style.color = "rgb(255, 255, 255)";
         document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(255, 255, 255)";
+        
+        if (document.getElementById("messages") != null) {
+            document.getElementById("messages").style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementById("messages").style.color = "rgb(255, 255, 255)";    
+        }
     } else if (document.body.style.backgroundColor == "rgb(20, 20, 20)") {
         document.cookie = "username=dark-mode; expires=Thu, 18 Dec 1970 00:00:00 UTC; path=/;"
+        document.getElementById("toggle-dark").firstElementChild.style.marginLeft = "0.3rem";
+        document.getElementById("toggle-dark").style.backgroundColor = "rgb(255, 255, 255)";
+        if (document.getElementsByClassName("dark-desk")[0] != undefined) {
+            document.getElementsByClassName("dark-desk")[0].style.backgroundColor = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[0].style.color = "rgb(0, 0, 0)";
+            document.getElementsByClassName("dark-desk")[1].style.backgroundColor = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[1].style.color = "rgb(0, 0, 0)";
+            document.getElementsByClassName("dark-desk")[2].style.backgroundColor = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[2].style.color = "rgb(0, 0, 0)";
+            document.getElementsByClassName("dark-desk")[3].style.backgroundColor = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[3].style.color = "rgb(0, 0, 0)";
+            document.getElementsByClassName("dark-desk")[4].style.backgroundColor = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[4].style.color = "rgb(0, 0, 0)";
+        }
+
+        if (document.getElementsByClassName("envelopes")[0] != undefined) {
+            document.getElementsByClassName("envelopes")[0].src = "/assets/svg/main/envelope-black.svg"
+        }
+
+        if (document.getElementsByClassName("gears")[0] != undefined) {
+            for (element of document.getElementsByClassName("gears")) {
+                element.src = "/assets/svg/main/cog.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("users")[0] != undefined) {
+            for (element of document.getElementsByClassName("users")) {
+                element.src = "/assets/svg/main/user-circle-black.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("arrows")[0] != undefined) {
+            for (element of document.getElementsByClassName("arrows")) {
+                element.src = "/assets/svg/main/long-arrow-alt-left.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("ellipsises")[0] != undefined) {
+            for (element of document.getElementsByClassName("ellipsises")) {
+                element.src = "/assets/svg/main/ellipsis-v.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("stars")[0] != undefined) {
+            for (element of document.getElementsByClassName("stars")) {
+                element.src = "/assets/svg/main/star.svg";
+            }
+        }
+
+        if (document.getElementById("calendar") != null) {
+            let i = 0;
+            for (element of document.getElementById("calendar").lastElementChild.getElementsByTagName("ul")) {
+                if (i == 0) {
+                    i++;
+                    continue;
+                }
+                element.style.backgroundColor = "rgb(255, 255, 255)";
+                element.style.color = "rgb(0, 0, 0)";
+                i++;
+            }
+        }
+
+        if (document.getElementsByClassName("ellipsises-h")[0] != undefined) {
+            for (element of document.getElementsByClassName("ellipsises-h")) {
+                element.src = "/assets/svg/main/ellipsis-h.svg";
+            }
+        }
 
         document.getElementById("user-menu").style.backgroundColor = "rgb(255, 255, 255)";
         document.getElementById("user-menu").style.color = "rgb(0, 0, 0)";
@@ -155,21 +296,93 @@ function toggleDark(element) {
 
         element.style.backgroundColor = "rgb(255, 255, 255)";
         document.body.style.backgroundColor = "rgb(255, 255, 255)";
-        document.body.style.color = "rgb(20, 20, 20)";
+        document.body.style.color = "rgb(0, 0, 0)";
         document.getElementById("msg-bar").style.backgroundColor = "rgb(255, 255, 255)";
         document.getElementById("bar-menu").style.backgroundColor = "rgb(255, 255, 255)";
         document.getElementById("bell").getElementsByTagName("div")[0].style.backgroundColor = "rgb(255, 255, 255)";
         
-        document.getElementById("msg-bar").style.color = "rgb(20, 20, 20)";
-        document.getElementById("bar-menu").style.color = "rgb(20, 20, 20)";
-        document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(20, 20, 20)";
-
+        document.getElementById("msg-bar").style.color = "rgb(0, 0, 0)";
+        document.getElementById("bar-menu").style.color = "rgb(0, 0, 0)";
+        document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(0, 0, 0)";
+        
+        if (document.getElementById("messages") != null) {
+            document.getElementById("messages").style.backgroundColor = "rgb(255, 255, 255)";
+            document.getElementById("messages").style.color = "rgb(0, 0, 0)";    
+        }
     }
 }
 
 window.onload = function() {
     if (document.cookie != "") {
+        document.getElementById("toggle-dark").firstElementChild.style.marginLeft = "2.1rem";
         document.getElementById("toggle-dark").style.backgroundColor = "rgb(20, 20, 20)";
+        if (document.getElementsByClassName("dark-desk")[0] != undefined) {
+            document.getElementsByClassName("dark-desk")[0].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[0].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[1].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[1].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[2].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[2].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[3].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[3].style.color = "rgb(255, 255, 255)";
+            document.getElementsByClassName("dark-desk")[4].style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementsByClassName("dark-desk")[4].style.color = "rgb(255, 255, 255)";
+        }
+
+        if (document.getElementsByClassName("envelopes")[0] != undefined) {
+            document.getElementsByClassName("envelopes")[0].src = "/assets/svg/main/envelope.svg"
+        }
+
+        if (document.getElementsByClassName("gears")[0] != undefined) {
+            for (element of document.getElementsByClassName("gears")) {
+                element.src = "/assets/svg/main/cog-white.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("users")[0] != undefined) {
+            for (element of document.getElementsByClassName("users")) {
+                element.src = "/assets/svg/main/user-circle.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("arrows")[0] != undefined) {
+            for (element of document.getElementsByClassName("arrows")) {
+                element.src = "/assets/svg/main/long-arrow-alt-left-white.svg";
+            };
+        }
+
+        if (document.getElementsByClassName("ellipsises")[0] != undefined) {
+            for (element of document.getElementsByClassName("ellipsises")) {
+                element.src = "/assets/svg/main/ellipsis-v-white.svg";
+            }
+        }
+
+        if (document.getElementsByClassName("stars")[0] != undefined) {
+            for (element of document.getElementsByClassName("stars")) {
+                element.src = "/assets/svg/main/star-white.svg";
+            }
+        }
+
+        if (document.getElementById("calendar") != null) {
+            let i = 0;
+            for (element of document.getElementById("calendar").lastElementChild.getElementsByTagName("ul")) {
+                if (i == 0) {
+                    i++;
+                    continue;
+                }
+                element.style.backgroundColor = "rgb(20, 20, 20)";
+                element.style.color = "rgb(255, 255, 255)";
+                i++;
+            }
+        }
+
+console.log(document.getElementsByClassName("ellipsises-h"));
+
+        if (document.getElementsByClassName("ellipsises-h")[0] != undefined) {
+            for (element of document.getElementsByClassName("ellipsises-h")) {
+                element.src = "/assets/svg/main/ellipsis-h-white.svg";
+            }
+        }
 
         document.getElementById("user-menu").style.backgroundColor = "rgb(20, 20, 20)";
         document.getElementById("user-menu").style.color = "rgb(255, 255, 255)";
@@ -206,5 +419,10 @@ window.onload = function() {
         document.getElementById("msg-bar").style.color = "rgb(255, 255, 255)";
         document.getElementById("bar-menu").style.color = "rgb(255, 255, 255)";
         document.getElementById("bell").getElementsByTagName("div")[0].style.color = "rgb(255, 255, 255)";
+
+        if (document.getElementById("messages") != null) {
+            document.getElementById("messages").style.backgroundColor = "rgb(20, 20, 20)";
+            document.getElementById("messages").style.color = "rgb(255, 255, 255)";
+        }
     }
 }

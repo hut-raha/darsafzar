@@ -1,10 +1,10 @@
 <div id="messages">
     <div>
         <input class="search-input" type="text" name="">
-        <img src="/assets/svg/main/cog.svg" alt="">
+        <img class="gears" src="/assets/svg/main/cog.svg" alt="">
     </div>
     <div>
-        <img src="/assets/svg/main/user-circle-black.svg" alt="">
+        <img class="users" src="/assets/svg/main/user-circle-black.svg" alt="">
         <span>مخاطبین</span>
     </div>
     <div>

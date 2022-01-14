@@ -1,10 +1,10 @@
 <div id="layout-items">
     <div>
         <h1>تحلیل و طراحی سیستم ها</h1>
-        <a href="">میز کار</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/desk">میز کار</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span>درس‌های من</span>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href="">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
     </div>
     <div>
