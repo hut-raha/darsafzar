@@ -28,15 +28,15 @@
                 <li>گروه</li>
                 <li>Raha</li>
             </ul>
-            <ul>
+            <ul class="dark-in-show">
                 <li>وضعیت تحویل</li>
                 <li>برای تصحیح تحویل داده شده است</li>
             </ul>
-            <ul>
+            <ul class="dark-in-show">
                 <li>وضعیت تصحیح</li>
                 <li>نمره داده شده است</li>
             </ul>
-            <ul>
+            <ul class="dark-in-show">
                 <li>زمان باقیمانده</li>
                 <li>تکلیف 12 ساعت 38 دقیقه زود تحویل داده شد</li>
             </ul>

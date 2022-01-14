@@ -100,6 +100,20 @@ function toggleDark(element) {
         document.getElementById("user-menu").getElementsByTagName("div")[4].getElementsByTagName("img")[0].src = "/assets/svg/main/wrench-white.svg";
         document.getElementById("user-menu").getElementsByTagName("div")[5].getElementsByTagName("img")[0].src = "/assets/svg/main/sign-out-alt-white.svg";
 
+        if (document.getElementsByClassName("dark-in-show")[0] != undefined) {
+            document.getElementsByClassName("dark-in-show")[0].getElementsByTagName("li")[1].style.backgroundColor = "#030";
+            document.getElementsByClassName("dark-in-show")[1].getElementsByTagName("li")[1].style.backgroundColor = "#030";
+            document.getElementsByClassName("dark-in-show")[2].getElementsByTagName("li")[1].style.backgroundColor = "#030";
+        }
+
+        if (document.getElementsByClassName("review-question")[0] != undefined) {
+            document.getElementsByClassName("review-question")[0].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[1].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[2].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[3].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[4].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+        }
+
         element.style.backgroundColor = "rgb(20, 20, 20)";
         document.body.style.backgroundColor = "rgb(20, 20, 20)";
         document.body.style.color = "rgb(255, 255, 255)";
@@ -125,6 +139,20 @@ function toggleDark(element) {
         document.getElementById("user-menu").getElementsByTagName("div")[4].getElementsByTagName("img")[0].src = "/assets/svg/main/wrench.svg";
         document.getElementById("user-menu").getElementsByTagName("div")[5].getElementsByTagName("img")[0].src = "/assets/svg/main/sign-out-alt.svg";
 
+        if (document.getElementsByClassName("dark-in-show")[0] != undefined) {
+            document.getElementsByClassName("dark-in-show")[0].getElementsByTagName("li")[1].style.backgroundColor = "#ceeece";
+            document.getElementsByClassName("dark-in-show")[1].getElementsByTagName("li")[1].style.backgroundColor = "#ceeece";
+            document.getElementsByClassName("dark-in-show")[2].getElementsByTagName("li")[1].style.backgroundColor = "#ceeece";
+        }
+
+        if (document.getElementsByClassName("review-question")[0] != undefined) {
+            document.getElementsByClassName("review-question")[0].getElementsByTagName("div")[2].style.backgroundColor = "#fff3cd"
+            document.getElementsByClassName("review-question")[1].getElementsByTagName("div")[2].style.backgroundColor = "#fff3cd"
+            document.getElementsByClassName("review-question")[2].getElementsByTagName("div")[2].style.backgroundColor = "#fff3cd"
+            document.getElementsByClassName("review-question")[3].getElementsByTagName("div")[2].style.backgroundColor = "#fff3cd"
+            document.getElementsByClassName("review-question")[4].getElementsByTagName("div")[2].style.backgroundColor = "#fff3cd"
+        }
+
         element.style.backgroundColor = "rgb(255, 255, 255)";
         document.body.style.backgroundColor = "rgb(255, 255, 255)";
         document.body.style.color = "rgb(20, 20, 20)";
@@ -140,7 +168,6 @@ function toggleDark(element) {
 }
 
 window.onload = function() {
-    console.log(document.cookie);
     if (document.cookie != "") {
         document.getElementById("toggle-dark").style.backgroundColor = "rgb(20, 20, 20)";
 
@@ -155,6 +182,20 @@ window.onload = function() {
         document.getElementById("user-menu").getElementsByTagName("div")[3].getElementsByTagName("img")[0].src = "/assets/svg/main/envelope.svg";
         document.getElementById("user-menu").getElementsByTagName("div")[4].getElementsByTagName("img")[0].src = "/assets/svg/main/wrench-white.svg";
         document.getElementById("user-menu").getElementsByTagName("div")[5].getElementsByTagName("img")[0].src = "/assets/svg/main/sign-out-alt-white.svg";
+
+        if (document.getElementsByClassName("dark-in-show")[0] != undefined) {
+            document.getElementsByClassName("dark-in-show")[0].getElementsByTagName("li")[1].style.backgroundColor = "#030";
+            document.getElementsByClassName("dark-in-show")[1].getElementsByTagName("li")[1].style.backgroundColor = "#030";
+            document.getElementsByClassName("dark-in-show")[2].getElementsByTagName("li")[1].style.backgroundColor = "#030";
+        }
+
+        if (document.getElementsByClassName("review-question")[0] != undefined) {
+            document.getElementsByClassName("review-question")[0].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[1].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[2].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[3].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+            document.getElementsByClassName("review-question")[4].getElementsByTagName("div")[2].style.backgroundColor = "#251e04"
+        }
 
         document.body.style.backgroundColor = "rgb(20, 20, 20)";
         document.body.style.color = "rgb(255, 255, 255)";
