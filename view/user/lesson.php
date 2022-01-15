@@ -133,6 +133,9 @@
             <h2>تالار اعلانات</h2>
             <a href="/forum/sad/12">تالار اعلانات</a>
             <img src="/assets/media/image/icon3.svg" alt="">
+            <div style="text-align: left">
+                <button class="btn-purple"; style="width:fit-content; padding: 0.5rem 1rem; font-size: 1rem" onclick="window.location.href='/forum/new'">اضافه کردن یک موضوع جدید</button>
+            </div>
         </div>
         <div>
             <h2>کلاس های آنلاین</h2>
@@ -318,6 +321,9 @@
                 </p>
                 <button class="btn-gray">دریافت کل محتوای پوشه</button>
             </div>
+            <div style="text-align: left">
+                <button class="btn-purple" style="width:fit-content; padding: 0.5rem 1rem; font-size: 1rem" onclick="window.location.href='/file/new'">پیکربندی فایل ها</button>
+            </div>
         </div>
         <div>
             <h2>تمرین ها</h2>
@@ -349,6 +355,9 @@
                 <a href="">گام 6 و 7 پروژه عملی</a>
                 <img src="/assets/media/image/icon.svg" alt="">
             </p>
+            <div style="text-align: left">
+                <button class="btn-purple" style="width:fit-content; padding: 0.5rem 1rem; font-size: 1rem" onclick="window.location.href='/exercise/new'">پیکربندی تمرین ها</button>
+            </div>
         </div>
         <div>
             <h2>آزمون ها</h2>
@@ -384,6 +393,9 @@
                 <a href="">آزمون فصل 9</a>
                 <img src="/assets/media/image/icon2.svg" alt="">
             </p>
+            <div style="text-align: left">
+                <button class="btn-purple" style="width:fit-content; padding: 0.5rem 1rem; font-size: 1rem" onclick="window.location.href='/exam/new'">پیکربندی آزمون ها</button>
+            </div>
         </div>
     </div>
 </div>
