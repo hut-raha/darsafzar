@@ -2,12 +2,12 @@
     <div>
         <h1>تحلیل و طراحی سیستم‌ها</h1>
         <br><br>
-        <a href="">میز کار</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/desk">میز کار</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span>درس های من</span>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
-        <a href="">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/lesson/sad">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span href="">تکالیف</span>
     </div>
     <div>

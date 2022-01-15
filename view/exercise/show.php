@@ -2,14 +2,14 @@
     <div>
         <h1>تحلیل و طراحی سیستم‌ها</h1>
         <br><br>
-        <a href="">میز کار</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/desk">میز کار</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span>درس های من</span>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
-        <a href="">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
-        <a href="">تمرین ها</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/lesson/sad">تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <a href="/user/exercise">تمرین ها</a>
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href="">گام 0 پروژه عملی</a>
     </div>
     <div>
@@ -28,15 +28,15 @@
                 <li>گروه</li>
                 <li>Raha</li>
             </ul>
-            <ul>
+            <ul class="dark-in-show">
                 <li>وضعیت تحویل</li>
                 <li>برای تصحیح تحویل داده شده است</li>
             </ul>
-            <ul>
+            <ul class="dark-in-show">
                 <li>وضعیت تصحیح</li>
                 <li>نمره داده شده است</li>
             </ul>
-            <ul>
+            <ul class="dark-in-show">
                 <li>زمان باقیمانده</li>
                 <li>تکلیف 12 ساعت 38 دقیقه زود تحویل داده شد</li>
             </ul>

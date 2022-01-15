@@ -68,11 +68,11 @@
             <div id="clk-alt">
                 <img src="/assets/svg/main/clock.svg" alt="" onclick="activitiesMenu(3)">
                 <img src="/assets/svg/main/sort-amount-down-alt.svg" alt="" onclick="activitiesMenu(0)">
-                <div style="display: none">
+                <div class="dark-desk" style="display: none">
                     <div>مرتب‌سازی بر اساس تاریخ‌ها</div>
                     <div>مرتب‌سازی بر اساس درس‌ها</div>
                 </div>
-                <div style="display: none">
+                <div class="dark-desk" style="display: none">
                     <div>همه</div>
                     <div>تاخیر دار</div>
                     <br>
@@ -97,7 +97,7 @@
 
     <div>
         <div>
-            <div>نمای کلی درس</div>
+            <div id="lessons-title">نمای کلی درس</div>
             <div onclick="openList(7)">
                 <span>همه (به جز موارد حذف شده)</span>
                 <img src="/assets/svg/main/filter.svg" alt="">
@@ -105,16 +105,16 @@
             <div id="card" onclick="openList(0)">
                 <span>کارت</span>
                 <img src="/assets/svg/main/th.svg" alt="">
-                <div style="display: none">
+                <div class="dark-desk" style="display: none">
                     <div>کارت</div>
                     <div>لیست</div>
                     <div>خلاصه</div>
                 </div>
-                <div style="display: none">
+                <div class="dark-desk" style="display: none">
                     <div>نام درس</div>
                     <div>آخرین زمان دسترسی</div>
                 </div>
-                <div style="display: none">
+                <div class="dark-desk" style="display: none">
                     <div>همه (به جز موارد حذف شده)</div>
                     <div>در جریان</div>
                     <div>آینده</div>
@@ -135,7 +135,7 @@
                     <img src="/assets/media/image/os_lab.jpg" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -147,7 +147,7 @@
                     <img src="" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -159,7 +159,7 @@
                     <img src="/assets/media/image/Cover.jpg" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -171,7 +171,7 @@
                     <img src="" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه دروس عمومی</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -183,7 +183,7 @@
                     <img src="" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه دروس عمومی</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -195,7 +195,7 @@
                     <img src="" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -207,7 +207,7 @@
                     <img src="" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>
@@ -219,7 +219,7 @@
                     <img src="" alt="">
                 </div>
                 <div>
-                    <img src="/assets/svg/main/ellipsis-h.svg" alt="">
+                    <img class="ellipsises-h" src="/assets/svg/main/ellipsis-h.svg" alt="">
                     <span>گروه مهندسی کامپیوتر</span>
                     <span>کد درس : ۰۱-۱۳۱۰۰۵۷</span>
                     <span>نیم سال تحصیلی ۰۰۱</span>

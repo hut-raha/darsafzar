@@ -142,6 +142,7 @@ html, body {
 
 a {
     text-decoration: none;
+    color: #079db8;
 }
 
 .btn-gray {
@@ -334,4 +335,22 @@ a {
     border: none;
     box-shadow: 0 0 6px 2px #888;
     padding: 1rem;
+}
+
+#toggle-dark {
+    height: 1.5rem;
+    width: 3.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#toggle-dark > div {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    margin: 0.3rem;
+    background-color: #003459;
+    transition: all 200ms;
 }

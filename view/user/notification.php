@@ -3,13 +3,13 @@
         <h1>تحلیل و طراحی سیستم‌ها</h1>
         <br><br>
         <a href="">میز کار</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span>درس های من</span>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href=""> آزمایشگاه سیستم های عامل(۱۳۱۰۰۵۷_۰۱)</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href="">تالار اعلانات</a>
-        <img src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
+        <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <a href="">روز و شرایط برگزاری آزمون درس آزمایشگاه سیستم های عامل</a>
         <input style="float:left" class="search-input" type="text" name="" placeholder="جستجو در تالارهای گفتگو">
     </div>
