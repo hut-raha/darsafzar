@@ -103,89 +103,17 @@ Route::check("class/online", function() {
     Controller::view("class/online");
 });
 
+Route::check("lesson/users", function() {
+    Controller::view("lesson/users");
+});
+
 Route::check("database/select-all", function() {
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM admin"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM calendar"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM download"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM educational_assistant"));
-    echo "</pre>";
-
     echo "<pre>";
     print_r(Database::getInstance()->output("SELECT * FROM employee"));
     echo "</pre>";
 
     echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM exams"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM exercise"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM lessons"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM messages"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM notifications"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM offline_class"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM participation"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM personal_files"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM professor"));
-    echo "</pre>";
-
-    echo "<pre>";
     print_r(Database::getInstance()->output("SELECT * FROM student"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM student_has_lesson"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM student_see_notifications"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM ta"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM ta_has_lesson"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM ta_manages_exercises"));
-    echo "</pre>";
-
-    echo "<pre>";
-    print_r(Database::getInstance()->output("SELECT * FROM ta_manages_files"));
     echo "</pre>";
 
     echo "<pre>";

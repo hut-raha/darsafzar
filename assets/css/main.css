@@ -140,6 +140,21 @@ html, body {
     background-color: #93c800;
 }
 
+.btn-green {
+    color: #fff;
+    font-size: 0.9em;
+    padding: 0.5rem;
+    background-color: #0e7005;
+    transition: all 100ms;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: #16970a;
+}
+
 a {
     text-decoration: none;
     color: #079db8;
@@ -169,7 +184,7 @@ a {
     overflow-y: scroll;
 }
 
-#bar-menu > div:first-child {
+#bar-menu > a:first-child > div {
     margin-top: 5.5rem;
 }
 
@@ -334,7 +349,7 @@ a {
 .select {
     border: none;
     box-shadow: 0 0 6px 2px #888;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 #toggle-dark {
