@@ -152,7 +152,7 @@
                 </div>
                 <div style="margin-top: 1rem">
                     <div style="display: inline-block; width: 49.8%">
-                        <a href="" style="color: #000; margin-right: 0.2rem">اضافه کردن شرایط</a>
+                        <a href="" style="margin-right: 0.2rem">اضافه کردن شرایط</a>
                     </div>
                     <div style="display: inline-block; text-align: left; width: 49.8%">
                         <button class="btn-purple" style="width: fit-content; font-size: 0.9rem">اعمال فیلتر‌ها</button>
@@ -258,20 +258,24 @@
             <div id="users-list">
                 <div>
                     <div>
+                        <h2 style="text-align: center">دانشجویان</h2>
                         <ul>
-                            <li>نام / نام‌خانوادگی</li><li>نام کاربری</li><li>ایمیل</li><li>تاریخ تولد</li><li>جنسیت</li><li>دپارتمان</li>
+                            <li class="w-30">نام کاربری</li><li class="w-30">شماره دانشجویی</li><li style="margin-right: 3rem" class="w-30">دپارتمان</li>
                         </ul>
-                        <?php foreach (Database::getInstance()->output("SELECT * FROM users LEFT OUTER JOIN student ON users.Username = student.Username") as $users) { ?>
+                        <?php foreach (Database::getInstance()->output("SELECT * FROM student") as $users) { ?>
                             <ul style="border-bottom: 0.1rem solid #ddd">
                                 <div style="display: flex; align-items: center">
-                                    <li>
+                                    <!-- <li>
                                         <img class="users" style="margin: 0.5rem 0 0.5rem 0.5rem; vertical-align: middle; height: 2rem" src="/assets/svg/main/user-circle-black.svg" alt="">
                                         <a href="/forum/discuss/51"><?php echo $users["Fname"]." ".$users["Lname"] ?></a>
-                                    </li>
-                                    <li>
+                                    </li> -->
+                                    <li class="w-30">
                                         <span><?php echo $users["Username"] ?></span>
                                     </li>
-                                    <li>
+                                    <li style="margin-right: 3rem" class="w-30">
+                                        <span><?php echo $users["student_id"] ?></span>
+                                    </li>
+                                    <!-- <li>
                                         <span><?php echo $users["Email"] ?></span>
                                     </li>
                                     <li>
@@ -279,22 +283,89 @@
                                     </li>
                                     <li>
                                         <span style="margin-right: 1rem"><?php if ($users["Sex"] == "male") { echo "مرد"; } else { echo "زن"; } ?></span>
+                                    </li> -->
+                                    <li class="w-30">
+                                        <span><?php echo $users["Dept"] ?></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        <?php } ?>
+                        <br><br>
+                        <div style="direction: rtl; text-align: center">
+                            <div style="display: inline-block; width: 89.5%" class="alphabet-list">
+                                <div style="padding: 0.4rem 0.6rem">1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>>></div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 style="text-align: center">دستیاران استاد</h2>
+                        <ul>
+                            <li class="w-30">نام کاربری</li><li class="w-30">شماره دانشجویی</li><li style="margin-right: 3rem" class="w-30">دپارتمان</li>
+                        </ul>
+                        <?php foreach (Database::getInstance()->output("SELECT * FROM student WHERE student_id = ".Database::getInstance()->output("SELECT * FROM ta")[0]["student_id"]) as $users) { ?>
+                            <ul style="border-bottom: 0.1rem solid #ddd">
+                                <div style="display: flex; align-items: center">
+                                    <!-- <li>
+                                        <img class="users" style="margin: 0.5rem 0 0.5rem 0.5rem; vertical-align: middle; height: 2rem" src="/assets/svg/main/user-circle-black.svg" alt="">
+                                        <a href="/forum/discuss/51"><?php echo $users["Fname"]." ".$users["Lname"] ?></a>
+                                    </li> -->
+                                    <li class="w-30">
+                                        <span><?php echo $users["Username"] ?></span>
+                                    </li>
+                                    <li style="margin-right: 3rem" class="w-30">
+                                        <span><?php echo $users["student_id"] ?></span>
+                                    </li>
+                                    <!-- <li>
+                                        <span><?php echo $users["Email"] ?></span>
                                     </li>
                                     <li>
+                                        <span><?php echo $users["Birth_date"] ?></span>
+                                    </li>
+                                    <li>
+                                        <span style="margin-right: 1rem"><?php if ($users["Sex"] == "male") { echo "مرد"; } else { echo "زن"; } ?></span>
+                                    </li> -->
+                                    <li class="w-30">
+                                        <span><?php echo $users["Dept"] ?></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        <?php } ?>
+                        <br>
+                        <h2 style="text-align: center">اساتید</h2>
+                        <ul>
+                            <li class="w-30">نام کاربری</li><li class="w-30">شماره استادی</li><li style="margin-right: 3rem" class="w-30">دپارتمان</li>
+                        </ul>
+                        <?php foreach (Database::getInstance()->output("SELECT * FROM professor") as $users) { ?>
+                            <ul style="border-bottom: 0.1rem solid #ddd">
+                                <div style="display: flex; align-items: center">
+                                    <!-- <li>
+                                        <img class="users" style="margin: 0.5rem 0 0.5rem 0.5rem; vertical-align: middle; height: 2rem" src="/assets/svg/main/user-circle-black.svg" alt="">
+                                        <a href="/forum/discuss/51"><?php echo $users["Fname"]." ".$users["Lname"] ?></a>
+                                    </li> -->
+                                    <li class="w-30">
+                                        <span><?php echo $users["Username"] ?></span>
+                                    </li>
+                                    <li style="margin-right: 3rem" class="w-30">
+                                        <span><?php echo $users["professor_id"] ?></span>
+                                    </li>
+                                    <!-- <li>
+                                        <span><?php echo $users["Email"] ?></span>
+                                    </li>
+                                    <li>
+                                        <span><?php echo $users["Birth_date"] ?></span>
+                                    </li>
+                                    <li>
+                                        <span style="margin-right: 1rem"><?php if ($users["Sex"] == "male") { echo "مرد"; } else { echo "زن"; } ?></span>
+                                    </li> -->
+                                    <li class="w-30">
                                         <span><?php echo $users["Dept"] ?></span>
                                     </li>
                                 </div>
                             </ul>
                         <?php } ?>
                     </div>
-                </div>
-            </div>
-            <div style="direction: rtl; text-align: center">
-                <div style="display: inline-block; width: 89.5%" class="alphabet-list">
-                    <div style="padding: 0.4rem 0.6rem">1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>>></div>
                 </div>
             </div>
         </div>

@@ -142,13 +142,14 @@ html, body {
 
 .btn-green {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 1rem;
     padding: 0.5rem;
     background-color: #0e7005;
     transition: all 100ms;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
+    width: 17rem;
 }
 
 .btn-green:hover {

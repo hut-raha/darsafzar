@@ -5,11 +5,13 @@
             <hr style="color: #fefefe"><br>
             <div style="text-align: right; margin-right: 2rem">
                 <span style="font-size: 1rem">کوکی‌ها باید در مرورگر شما فعال باشند</span>
-                <input style="width: 40%; border: 0.1rem solid #aaa; padding: 0.5rem; border-radius: 0.3rem; direction: rtl; margin: 1rem" type="text" name="" id="" placeholder="نام کاربری"><br>
-                <input style="width: 40%; border: 0.1rem solid #aaa; padding: 0.5rem; border-radius: 0.3rem; direction: rtl; margin: 1rem" type="password" name="" id="" placeholder="رمز ورود"><br>
-                <span>به خاطر سپردن نام کاربری</span>
-                <input style="margin: 1rem 1rem 1rem 0" type="checkbox" name="" id=""><br>
-                <input style="margin: 1rem" class="btn-purple" type="button" value="ورود به سایت" onclick="login()">
+                <form action="/login/check" method="post">
+                    <input name="login_username" style="width: 40%; border: 0.1rem solid #aaa; padding: 0.5rem; border-radius: 0.3rem; direction: rtl; margin: 1rem" type="text" name="" id="" placeholder="نام کاربری"><br>
+                    <input name="login_password" style="width: 40%; border: 0.1rem solid #aaa; padding: 0.5rem; border-radius: 0.3rem; direction: rtl; margin: 1rem" type="password" name="" id="" placeholder="رمز ورود"><br>
+                    <span>به خاطر سپردن نام کاربری</span>
+                    <input style="margin: 1rem 1rem 1rem 0" type="checkbox" id=""><br>
+                    <input style="margin: 1rem" class="btn-purple" type="submit" value="ورود به سایت" onclick="login()">
+                </form>
             </div>
         </div>
         <div id="notification-section">
