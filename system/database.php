@@ -12,7 +12,7 @@ class Database {
 
     public function __construct() {
         global $config;
-        $this->connection = new mysqli("localhost", "root", "", "raha_darsafzar");
+        $this->connection = new mysqli("localhost", "frb173316_d", "@ADKGH2kq2ea2\$llp;06j3#", "frb173316_d");
 
         if ($this->connection->connect_error) {
             throw new Exception("Connection failed ! Connection error code : ".$this->connection->connect_error);

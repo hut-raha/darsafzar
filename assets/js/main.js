@@ -1,6 +1,5 @@
 function userMenu() {
     if (document.getElementById("user-menu").getAttribute("data-lock") == "false") {
-        console.log("V");
         if (document.getElementById("user-menu").style.opacity == 0) {
             document.getElementById("user-menu").setAttribute("data-lock", "true");
             document.getElementById("user-menu").style.display = "block";
@@ -84,7 +83,6 @@ function openBellList(num) {
 }
 
 function toggleDark(element) {
-    console.log(document.body.style.backgroundColor);
     if (document.body.style.backgroundColor == "rgb(255, 255, 255)") {
         document.cookie = "username=dark-mode; expires=Thu, 18 Dec 2050 12:00:00 UTC; path=/;"
         document.getElementById("toggle-dark").firstElementChild.style.marginLeft = "2.1rem";
@@ -313,7 +311,9 @@ function toggleDark(element) {
 }
 
 window.onload = function() {
-    if (document.cookie != "") {
+    console.log(document.cookie);
+    if (document.cookie.includes("username=dark-mode")) {
+        console.log("A");
         document.getElementById("toggle-dark").firstElementChild.style.marginLeft = "2.1rem";
         document.getElementById("toggle-dark").style.backgroundColor = "rgb(20, 20, 20)";
         if (document.getElementsByClassName("dark-desk")[0] != undefined) {
@@ -375,8 +375,6 @@ window.onload = function() {
                 i++;
             }
         }
-
-console.log(document.getElementsByClassName("ellipsises-h"));
 
         if (document.getElementsByClassName("ellipsises-h")[0] != undefined) {
             for (element of document.getElementsByClassName("ellipsises-h")) {
