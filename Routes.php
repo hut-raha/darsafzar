@@ -27,6 +27,10 @@ Route::check("logout/check", function() {
     header("Location: /user/login");
 });
 
+Route::check("login/already_done", function() {
+    require_once "view/login/already_done.php";
+});
+
 Route::check("report/error", function() {
     $indexTool = IndexTool::getInstance();
     if ($indexTool->getParams()[0] = 404)
@@ -36,6 +40,10 @@ Route::check("report/error", function() {
 });
 
 Route::check("user/login", function() {
+    if (isset($_SESSION["user"])) {
+        header("Location: /login/already_done");
+        exit;
+    }
     Controller::view("user/login");
 });
 
