@@ -42,27 +42,27 @@
         </div>
     </div>
     <div id="bar-menu">
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/lesson/sad"; } else { echo "/user/desk"; } ?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/user/lesson/sad"; } else { echo "/user/desk"; } ?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)"; } else { echo "میز کار"; } ?></span>
             </div>
         </a>
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/lesson/users"; } else { echo "/user/desk"; } ?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/lesson/users"; } else { echo "/user/desk"; } ?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "شرکت کنندگان"; } else { echo "صفحهٔ اصلی سایت"; } ?></span>
             </div>
         </a>
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/grades"; }?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/user/grades"; }?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "نمره‌ها"; } else { echo "تقویم"; } ?></span>
             </div>
         </a>
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "forum/desk" && IndexTool::getInstance()->getRoute() != "forum/account" && IndexTool::getInstance()->getRoute() != "forum/grades" && IndexTool::getInstance()->getRoute() != "forum/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/forum/sad/12"; } ?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "forum/desk" && IndexTool::getInstance()->getRoute() != "forum/account" && IndexTool::getInstance()->getRoute() != "forum/grades" && IndexTool::getInstance()->getRoute() != "forum/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/forum/sad/12"; } ?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "تالار اعلانات"; } else { echo "فایل‌های شخصی"; } ?></span>
             </div>
         </a>
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/class/online"; } ?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/class/online"; } ?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "کلاس های آنلاین"; } else { echo "درس‌های من"; } ?></span>
             </div>
@@ -82,12 +82,12 @@
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "آزمون ها"; } else { echo "اصول طراحی کامپایلر(۱۳۱۰۰۳۹_۰۱)"; } ?></span>
             </div>
         </a>
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/desk"; } else { echo "/user/lesson/sad"; } ?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/user/desk"; } else { echo "/user/lesson/sad"; } ?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "میز کار"; } else { echo "تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)"; } ?></span>
             </div>
         </a>
-        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/desk"; } ?>">
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/notification") { echo "/user/desk"; } ?>">
             <div>
                 <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "صفحهٔ اصلی سایت"; } else { echo "آزمایشگاه سیستم های عامل(۱۳۱۰۰۵۷_۰۱)"; } ?></span>
             </div>
