@@ -42,48 +42,87 @@
         </div>
     </div>
     <div id="bar-menu">
-        <div>
-            <span>میز کار</span>
-        </div>
-        <div>
-            <span>صفحهٔ اصلی سایت</span>
-        </div>
-        <div>
-            <span>تقویم</span>
-        </div>
-        <div>
-            <span>فایل‌های شخصی</span>
-        </div>
-        <div>
-            <span>درس‌های من</span>
-        </div>
-        <div>
-            <span>اطلاعیه های آموزشی ترم ۰۰۱</span>
-        </div>
-        <div>
-            <span>ریزپردازنده و زبان اسمبلی(۱۳۱۰۰۵۰_۰۱)</span>
-        </div>
-        <div>
-            <span>اصول طراحی کامپایلر(۱۳۱۰۰۳۹_۰۱)</span>
-        </div>
-        <div>
-            <span>تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</span>
-        </div>
-        <div>
-            <span>آزمایشگاه سیستم های عامل(۱۳۱۰۰۵۷_۰۱)</span>
-        </div>
-        <div>
-            <span>طراحی کامپیوتری سیستم های دیجیتال(۱۳۱۰۰۴۵_۰۱)</span>
-        </div>
-        <div>
-            <span>شبکه های کامپیوتری(۱۳۱۰۰۱۵_۰۱)</span>
-        </div>
-        <div>
-            <span>دانش خانواده و جمعیت(۱۱۱۱۰۲۱_۰۳)</span>
-        </div>
-        <div>
-            <span>تفسیر موضوعی قرآن(۱۱۱۱۰۰۹_۰۳)</span>
-        </div>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/lesson/sad"; } else { echo "/user/desk"; } ?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)"; } else { echo "میز کار"; } ?></span>
+            </div>
+        </a>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/lesson/users"; } else { echo "/user/desk"; } ?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "شرکت کنندگان"; } else { echo "صفحهٔ اصلی سایت"; } ?></span>
+            </div>
+        </a>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/grades"; }?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "نمره‌ها"; } else { echo "تقویم"; } ?></span>
+            </div>
+        </a>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "forum/desk" && IndexTool::getInstance()->getRoute() != "forum/account" && IndexTool::getInstance()->getRoute() != "forum/grades" && IndexTool::getInstance()->getRoute() != "forum/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/forum/sad/12"; } ?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "تالار اعلانات"; } else { echo "فایل‌های شخصی"; } ?></span>
+            </div>
+        </a>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/class/online"; } ?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "کلاس های آنلاین"; } else { echo "درس‌های من"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "فایل های بارگذاری شده"; } else { echo "اطلاعیه های آموزشی ترم ۰۰۱"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "تمرین ها"; } else { echo "ریزپردازنده و زبان اسمبلی(۱۳۱۰۰۵۰_۰۱)"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "آزمون ها"; } else { echo "اصول طراحی کامپایلر(۱۳۱۰۰۳۹_۰۱)"; } ?></span>
+            </div>
+        </a>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/desk"; } else { echo "/user/lesson/sad"; } ?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "میز کار"; } else { echo "تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)"; } ?></span>
+            </div>
+        </a>
+        <a href="<?php if (IndexTool::getInstance()->getRoute() != "user/desk" && IndexTool::getInstance()->getRoute() != "user/account" && IndexTool::getInstance()->getRoute() != "user/grades" && IndexTool::getInstance()->getRoute() != "user/messages" && IndexTool::getInstance()->getRoute() != "user/prefrences" && IndexTool::getInstance()->getRoute() != "user/desk") { echo "/user/desk"; } ?>">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "صفحهٔ اصلی سایت"; } else { echo "آزمایشگاه سیستم های عامل(۱۳۱۰۰۵۷_۰۱)"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "تقویم"; } else { echo "طراحی کامپیوتری سیستم های دیجیتال(۱۳۱۰۰۴۵_۰۱)"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "فایل‌های شخصی"; } else { echo "شبکه های کامپیوتری(۱۳۱۰۰۱۵_۰۱)"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "درس‌های من"; } else { echo "دانش خانواده و جمعیت(۱۱۱۱۰۲۱_۰۳)"; } ?></span>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <span><?php if (IndexTool::getInstance()->getRoute() == "user/lesson") { echo "ریزپردازنده و زبان اسمبلی(۱۳۱۰۰۵۰_۰۱)"; } else { echo "تفسیر موضوعی قرآن(۱۱۱۱۰۰۹_۰۳)"; } ?></span>
+            </div>
+        </a>
+        <?php if (IndexTool::getInstance()->getRoute() == "/user/lesson/sad") { ?>
+            <div>
+                <span>اصول طراحی کامپایلر(۱۳۱۰۰۳۹_۰۱)</span>
+                <span>تحلیل و طراحی سیستم‌ها (۱۳۱۲۰۴۶_۰۱)</span>
+                <span>آزمایشگاه سیستم های عامل(۱۳۱۰۰۵۷_۰۱)</span>
+                <span>طراحی کامپیوتری سیستم های دیجیتال(۱۳۱۰۰۴۵_۰۱)</span>
+                <span>شبکه های کامپیوتری(۱۳۱۰۰۱۵_۰۱)</span>
+                <span>دانش خانواده و جمعیت(۱۱۱۱۰۲۱_۰۳)</span>
+                <span>تفسیر موضوعی قرآن(۱۱۱۱۰۰۹_۰۳)</span>
+            </div>
+        <?php } ?>
     </div>
     <?php if (IndexTool::getInstance()->getRoute() != "main/home" && IndexTool::getInstance()->getRoute() != "user/login") {?>
     <div id="nav-bar">

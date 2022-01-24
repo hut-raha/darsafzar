@@ -38,7 +38,7 @@ function userMenuPage(num) {
             window.location.href = "/user/prefrences";
             break;
         case 5:
-            window.location.href = "/user/login";
+            window.location.href = "/logout/check";
             break;
     }
 }
