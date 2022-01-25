@@ -1,6 +1,6 @@
 <?php
 
-class EducationalAssistant {
+class EducationalAssistant extends User {
     private $educational_assistant_id;
 
     public function setEducationalAssistantId($educational_assistant_id) {

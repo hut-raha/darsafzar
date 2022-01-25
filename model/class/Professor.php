@@ -1,6 +1,6 @@
 <?php
 
-class Professor {
+class Professor extends User {
     private $professor_id;
     private $department;
 
@@ -18,10 +18,6 @@ class Professor {
 
     public function getDepartment() {
         return $this->department;
-    }
-
-    public function login() {
-        header("Location: /user/login");
     }
 
     public function logout() {
