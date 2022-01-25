@@ -1,6 +1,6 @@
 <?php
 
-class Student {
+class Student extends User {
     private $student_id;
     private $department;
     private $sendMessage;
@@ -27,10 +27,6 @@ class Student {
 
     public function getSendMessage() {
         return $this->sendMessage;
-    }
-
-    public function login() {
-        header("Location: /user/login");
     }
 
     public function logout() {

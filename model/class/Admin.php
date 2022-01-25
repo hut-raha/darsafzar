@@ -1,6 +1,6 @@
 <?php
 
-class Admin {
+class Admin extends User {
     private $admin_id;
 
     public function setAdminId($admin_id) {
@@ -9,10 +9,6 @@ class Admin {
 
     public function getAdminId($admin_id) {
         $this->admin_id = $admin_id;
-    }
-
-    public function login() {
-        header("Location: /user/login");
     }
 
     public function logout() {

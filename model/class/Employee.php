@@ -1,6 +1,6 @@
 <?php
 
-class Employee {
+class Employee extends User {
     private $salary;
 
     public function setSalay($salary) {
@@ -9,10 +9,6 @@ class Employee {
 
     public function getSalay() {
         return $this->salary;
-    }
-
-    public function login() {
-        header("Location: /user/login");
     }
 
     public function logout() {
