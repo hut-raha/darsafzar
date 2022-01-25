@@ -2,7 +2,7 @@
     <div>
         <h1>تحلیل و طراحی سیستم‌ها</h1>
         <br><br>
-        <a href="">میز کار</a>
+        <a href="/user/desk">میز کار</a>
         <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
         <span>درس های من</span>
         <img class="arrows" src="/assets/svg/main/long-arrow-alt-left.svg" alt="">
@@ -26,7 +26,7 @@
                 <option value="">نمایش مطالب به صورت رشته‌ای</option>
                 <option value="" selected="selected">نمایش مطالب به صورت تو در تو</option>
             </select><br><br>
-            <img style="height: 3rem" src="/assets/svg/main/user-circle-black.svg" alt="">
+            <img class="users" style="height: 3rem" src="/assets/svg/main/user-circle-black.svg" alt="">
             <span>روز و شرایط برگزاری آزمون درس آزمایشگاه سیستم های عامل</span><br>
             <div style="margin-right: 3.1rem">
                 <span> از</span>
